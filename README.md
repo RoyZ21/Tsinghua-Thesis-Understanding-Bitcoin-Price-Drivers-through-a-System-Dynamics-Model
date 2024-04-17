@@ -1,0 +1,1 @@
+This is the appendix Chinese and English model for Tianyi Zhang's Thesis "Understanding Bitcoin Price Drivers through a System Dynamics Model". The model describes the bitcoin dynamics between price and mining profit. For anyone who is interested in further exploring the model, welcome to contact the author zhangtianyi2021@gmail.com
