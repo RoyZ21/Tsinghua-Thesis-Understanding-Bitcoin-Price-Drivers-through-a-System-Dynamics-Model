@@ -1,0 +1,426 @@
+{UTF-8}
+BTC Price  = A FUNCTION OF( Belief in BTC,BTC Liquid Supply,Funds Available from Fundamental Investors\
+		,Funds Available from Speculators,Funds Invested from Fundamental Investors,Funds Invested from Speculators\
+		,Value of Ledger)
+	~	
+	~		|
+
+BTC Held by HODLer  = A FUNCTION OF( BTC in circulation)
+	~	
+	~		|
+
+Halving Impact on Price  = A FUNCTION OF( BTC Price)
+	~	
+	~		|
+
+Distrust of Centralized Institution  = A FUNCTION OF( )
+	~	
+	~		|
+
+Belief in BTC  = A FUNCTION OF( Distrust of Centralized Institution,Halving Impact on Price\
+		,"Long-term Price Trend",Policy Support,"Short-term Price Trend",Transaction Volumn\
+		,Value of Ledger)
+	~	
+	~		|
+
+BTC Liquid Supply  = A FUNCTION OF( BTC Held by HODLer,BTC in circulation,BTC Sold by Miners\
+		,Demand of Fundamental Investors)
+	~	
+	~		|
+
+Policy Support  = A FUNCTION OF( )
+	~	
+	~		|
+
+Exposure to Investors  = A FUNCTION OF( BTC Price)
+	~	
+	~		|
+
+Funds Available from Fundamental Investors  = A FUNCTION OF( Available Investing Instruments\
+		,Exposure to Investors,Funds Invested from Fundamental Investors)
+	~	
+	~		|
+
+Funds Available from Speculators  = A FUNCTION OF( Available Investing Instruments,Exposure to Investors\
+		,Funds Invested from Speculators)
+	~	
+	~		|
+
+Available Investing Instruments  = A FUNCTION OF( BTC Price)
+	~	
+	~		|
+
+Funds Invested from Speculators  = A FUNCTION OF( Demand of Speculators)
+	~	
+	~		|
+
+BTC Held By Miners  = A FUNCTION OF( Block Mined)
+	~	
+	~		|
+
+Mining Capital Expenditure  = A FUNCTION OF( Computing Power in Network,Price of Mining Machine\
+		)
+	~	
+	~		|
+
+Value of Ledger  = A FUNCTION OF( BTC in circulation,Mining Concentration)
+	~	
+	~		|
+
+BTC Sold by Miners  = A FUNCTION OF( BTC Held By Miners)
+	~	
+	~		|
+
+Computing Power in Network  = A FUNCTION OF( Computing Power per Miner,Demand for Mining Machine\
+		,Number of Miners,Supply for Mining Machine)
+	~	
+	~		|
+
+Price of Mining Machine  = A FUNCTION OF( Demand for Mining Machine,Supply for Mining Machine\
+		)
+	~	
+	~		|
+
+Demand for Mining Machine  = A FUNCTION OF( Attractiveness to Miners)
+	~	
+	~		|
+
+Supply for Mining Machine  = A FUNCTION OF( Demand for Mining Machine)
+	~	
+	~		|
+
+Trascation Fee  = A FUNCTION OF( Transaction Volumn)
+	~	
+	~		|
+
+Transaction Volumn  = A FUNCTION OF( BTC in circulation,BTC Liquid Supply,BTC Price)
+	~	
+	~		|
+
+Funds Invested from Fundamental Investors  = A FUNCTION OF( Demand of Fundamental Investors\
+		)
+	~	
+	~		|
+
+Mining Revenue  = A FUNCTION OF( BTC Price,Trascation Fee)
+	~	
+	~		|
+
+Mining Concentration  = A FUNCTION OF( Mining Profit)
+	~	
+	~		|
+
+Demand of Fundamental Investors  = A FUNCTION OF( Attractiveness to Fundamental Investors\
+		)
+	~	
+	~		|
+
+Demand of Speculators  = A FUNCTION OF( Attractiveness to Speculators)
+	~	
+	~		|
+
+Attractiveness to Fundamental Investors  = A FUNCTION OF( "Long-term Price Trend","Short-term Price Trend"\
+		)
+	~	
+	~		|
+
+BTC Reward per Block  = A FUNCTION OF( Block Mined)
+	~	
+	~		|
+
+Attractiveness to Speculators  = A FUNCTION OF( "Short-term Price Trend")
+	~	
+	~		|
+
+Block Mined  = A FUNCTION OF( Computing Power in Network)
+	~	
+	~		|
+
+BTC in circulation  = A FUNCTION OF( Block Mined)
+	~	
+	~		|
+
+Difficulty to Find a New Block  = A FUNCTION OF( Computing Power in Network,DIfference Between Target Time and Current Time to Generate New Block\
+		)
+	~	
+	~		|
+
+DIfference Between Target Time and Current Time to Generate New Block  = A FUNCTION OF\
+		( Time to Generate New Block)
+	~	
+	~		|
+
+"Long-term Price Trend"  = A FUNCTION OF( BTC Price)
+	~	
+	~		|
+
+"Short-term Price Trend"  = A FUNCTION OF( BTC Price)
+	~	
+	~		|
+
+Mining Profit  = A FUNCTION OF( BTC Reward per Block,Mining Capital Expenditure,Mining Marginal Cost\
+		,Mining Revenue)
+	~	
+	~		|
+
+Time to Generate New Block  = A FUNCTION OF( Difficulty to Find a New Block)
+	~	
+	~		|
+
+Attractiveness to Miners  = A FUNCTION OF( Mining Profit)
+	~	
+	~		|
+
+Computing Power per Miner  = A FUNCTION OF( Difficulty to Find a New Block)
+	~	
+	~		|
+
+Energy Required per Block  = A FUNCTION OF( Difficulty to Find a New Block)
+	~	
+	~		|
+
+Mining Marginal Cost  = A FUNCTION OF( Energy Required per Block)
+	~	
+	~		|
+
+Number of Miners  = A FUNCTION OF( Attractiveness to Miners)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,81,0
+10,1,Difficulty to Find a New Block,514,872,67,28,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,2,Computing Power in Network,784,555,74,26,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,3,Mining Profit,251,222,62,23,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,4,Attractiveness to Miners,544,160,74,23,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,5,Number of Miners,854,264,56,23,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,6,Energy Required per Block,225,802,79,30,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,7,Mining Marginal Cost,54,628,70,24,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,8,3,4,1,0,43,0,0,192,0,-1--1--1,,1|(377,164)|
+1,9,4,5,1,0,43,0,0,192,0,-1--1--1,,1|(740,200)|
+1,10,5,2,1,0,43,0,0,192,0,-1--1--1,,1|(870,399)|
+1,11,2,1,1,0,43,0,0,192,0,-1--1--1,,1|(743,724)|
+1,12,1,6,1,0,43,0,0,192,0,-1--1--1,,1|(365,857)|
+1,13,6,7,1,0,43,0,0,192,0,-1--1--1,,1|(108,727)|
+1,14,7,3,1,0,45,0,0,192,0,-1--1--1,,1|(83,395)|
+10,15,Computing Power per Miner,864,873,65,27,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,16,1,15,1,0,43,0,0,192,0,-1--1--1,,1|(633,889)|
+1,17,15,2,1,0,43,0,0,192,0,-1--1--1,,1|(855,702)|
+10,18,Mining Capital Expenditure,311,496,84,25,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,19,2,18,1,0,43,0,0,192,0,-1--1--1,,1|(553,592)|
+1,20,18,3,1,0,45,0,0,192,0,-1--1--1,,1|(259,435)|
+10,21,Mining Revenue,894,133,58,27,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,22,21,3,1,0,43,0,0,192,0,-1--1--1,,1|(645,89)|
+12,23,0,387,285,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+B
+12,24,0,391,336,66,17,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Mining Profit Tradeoff
+10,25,Time to Generate New Block,716,1079,56,26,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,26,DIfference Between Target Time and Current Time to Generate New Block,347,1079,97,37,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,27,1,25,1,0,43,0,0,192,0,-1--1--1,,1|(641,954)|
+1,28,25,26,1,0,45,0,0,192,0,-1--1--1,,1|(552,1116)|
+1,29,26,1,1,0,43,0,0,192,0,-1--1--1,,1|(409,962)|
+10,30,BTC Price,1699,348,42,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,31,"Long-term Price Trend",1816,138,61,30,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,32,Attractiveness to Fundamental Investors,2148,6,96,37,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,33,Demand of Fundamental Investors,2566,256,95,29,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,34,30,31,1,0,43,0,0,192,0,-1--1--1,,1|(1744,245)|
+1,35,31,32,1,0,43,0,0,192,0,-1--1--1,,1|(1925,53)|
+1,36,32,33,1,0,43,0,0,192,0,-1--1--1,,1|(2386,64)|
+12,37,0,515,973,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+B
+12,38,0,514,1022,66,25,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Mining Difficulty Adjustment
+12,39,0,2079,168,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+R
+12,40,0,2081,220,66,25,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Fundamental Investors
+10,41,"Short-term Price Trend",2106,419,67,23,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,42,Attractiveness to Speculators,2379,509,82,25,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,43,Demand of Speculators,2249,632,66,25,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,44,30,41,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,45,41,42,1,0,43,0,0,192,0,-1--1--1,,1|(2240,432)|
+1,46,42,43,1,0,43,0,0,192,0,-1--1--1,,1|(2323,582)|
+12,47,0,2076,513,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+R
+12,48,0,2078,567,66,25,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Speculators
+10,49,Block Mined,586,733,51,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,50,BTC Reward per Block,270,675,63,27,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,51,2,49,1,0,43,0,0,192,0,-1--1--1,,1|(706,658)|
+1,52,49,50,1,0,45,0,0,192,0,-1--1--1,,1|(434,734)|
+1,53,50,3,1,0,0,0,0,192,0,-1--1--1,,1|(183,434)|
+12,54,0,423,636,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+B
+12,55,0,427,687,66,17,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Halving|<<NnN>>|
+1,56,30,21,1,0,43,0,0,192,0,-1--1--1,,1|(1278,281)|
+10,57,BTC in circulation,1077,581,55,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,58,Transaction Volumn,1047,300,61,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,59,Value of Ledger,1285,417,73,23,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,60,57,59,1,0,43,0,0,192,0,-1--1--1,,1|(1203,516)|
+1,61,59,30,1,0,43,0,0,64,0,-1--1--1,,1|(1431,431)|
+1,62,57,58,1,0,43,0,0,192,0,-1--1--1,,1|(1035,462)|
+1,63,49,57,1,0,43,0,0,192,0,-1--1--1,,1|(834,743)|
+1,64,41,32,1,0,45,0,0,192,0,-1--1--1,,1|(2162,197)|
+12,65,0,957,369,25,25,5,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+R
+12,66,0,955,415,66,25,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Liquidity
+10,67,BTC Liquid Supply,1679,771,59,29,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,68,57,67,1,0,43,0,0,192,0,-1--1--1,,1|(1293,695)|
+1,69,67,30,1,0,45,0,0,64,0,-1--1--1,,1|(1616,579)|
+1,70,33,67,1,0,45,0,0,192,0,-1--1--1,,1|(2382,698)|
+10,71,Demand for Mining Machine,711,272,93,28,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,72,4,71,1,0,43,0,0,192,0,-1--1--1,,1|(658,205)|
+10,73,Supply for Mining Machine,674,437,80,26,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,74,Price of Mining Machine,510,480,75,28,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,75,74,18,1,0,43,0,0,64,0,-1--1--1,,1|(444,522)|
+1,76,71,73,1,0,43,0,0,193,0,-1--1--1,,1|(720,352)|
+1,77,73,74,1,0,45,0,0,192,0,-1--1--1,,1|(634,484)|
+1,78,71,2,1,0,43,0,0,192,0,-1--1--1,,1|(783,424)|
+1,79,73,2,1,0,43,0,0,192,0,-1--1--1,,1|(745,500)|
+1,80,71,74,1,0,43,0,0,192,0,-1--1--1,,1|(524,356)|
+10,81,BTC Held By Miners,1101,834,51,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,82,49,81,1,0,43,0,0,192,0,-1--1--1,,1|(836,808)|
+10,83,BTC Sold by Miners,1403,848,52,32,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,84,81,83,1,0,43,0,0,192,0,-1--1--1,,1|(1259,858)|
+1,85,83,67,1,0,43,0,0,192,0,-1--1--1,,1|(1544,853)|
+10,86,Mining Concentration,735,-47,66,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,87,3,86,1,0,45,0,0,192,0,-1--1--1,,1|(422,41)|
+1,88,86,59,1,0,45,0,0,192,0,-1--1--1,,1|(1147,181)|
+12,89,0,609,344,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+B
+12,90,0,611,390,66,17,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Mining Machine
+12,91,0,728,8,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+R
+12,92,0,730,54,66,17,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Mining Concentration
+12,93,0,1059,691,25,25,5,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+B
+12,94,0,1060,745,66,25,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Miners Holding and Selling BTC
+1,95,67,58,1,0,43,0,0,192,0,-1--1--1,,1|(1308,589)|
+1,96,30,58,1,0,43,0,0,192,0,-1--1--1,,1|(1362,256)|
+10,97,Trascation Fee,945,224,62,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,98,58,97,1,0,43,0,0,192,0,-1--1--1,,1|(971,276)|
+1,99,97,21,1,0,43,0,0,192,0,-1--1--1,,1|(912,188)|
+12,100,0,2316,149,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+B
+12,101,0,2320,208,66,25,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Short Term Trend Balance
+10,102,Funds Invested from Fundamental Investors,2327,343,96,36,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,103,Funds Invested from Speculators,1977,612,103,37,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,104,Funds Available from Speculators,1837,717,98,28,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,105,Funds Available from Fundamental Investors,1639,75,86,33,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,106,33,102,1,0,43,0,0,192,0,-1--1--1,,1|(2469,304)|
+1,107,102,30,1,0,43,0,0,192,0,-1--1--1,,1|(1993,325)|
+1,108,103,30,1,0,43,0,0,192,0,-1--1--1,,1|(1850,472)|
+1,109,43,103,1,0,43,0,0,192,0,-1--1--1,,1|(2075,655)|
+1,110,103,104,1,0,45,0,0,192,0,-1--1--1,,1|(1930,671)|
+1,111,104,30,1,0,43,0,0,64,0,-1--1--1,,1|(1742,572)|
+1,112,102,105,1,0,45,0,0,192,0,-1--1--1,,1|(2067,128)|
+1,113,105,30,1,0,43,0,0,64,0,-1--1--1,,1|(1596,240)|
+10,114,Available Investing Instruments,1495,494,87,29,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,115,Exposure to Investors,1876,268,62,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,116,30,114,1,0,43,0,0,192,0,-1--1--1,,1|(1611,417)|
+1,117,114,105,1,0,43,0,0,192,0,-1--1--1,,1|(1461,337)|
+1,118,114,104,1,0,43,0,0,192,0,-1--1--1,,1|(1620,613)|
+1,119,30,115,1,0,43,0,0,192,0,-1--1--1,,1|(1756,308)|
+1,120,115,105,1,0,43,0,0,192,0,-1--1--1,,1|(1703,202)|
+1,121,115,104,1,0,43,0,0,192,0,-1--1--1,,1|(1886,495)|
+12,122,0,1780,468,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+B
+12,123,0,1789,518,66,25,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Available Short-term Fund|<<NnN>>|
+12,124,0,1642,187,25,25,4,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+B
+12,125,0,1659,238,66,25,8,7,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+Available Long-term Fund|<<NnN>>|
+10,126,Belief in BTC,1535,-92,60,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,127,58,126,1,0,43,0,0,192,0,-1--1--1,,1|(1286,15)|
+1,128,59,126,1,0,43,0,0,192,0,-1--1--1,,1|(1520,94)|
+1,129,31,126,1,0,43,0,0,192,0,-1--1--1,,1|(1746,49)|
+1,130,41,126,1,0,43,0,0,192,0,-1--1--1,,1|(1862,44)|
+1,131,126,30,1,0,43,0,1,64,0,255-0-0,|||0-0-0,1|(1513,268)|
+10,132,Halving Impact on Price,1316,193,62,32,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,133,30,132,1,0,43,0,0,192,0,-1--1--1,,1|(1374,282)|
+1,134,132,126,1,0,43,0,0,192,0,-1--1--1,,1|(1389,38)|
+10,135,BTC Held by HODLer,1277,791,51,22,8,3,0,42,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,136,57,135,1,0,43,0,0,192,0,-1--1--1,,1|(1196,727)|
+1,137,135,67,1,0,45,0,0,192,0,-1--1--1,,1|(1467,810)|
+10,138,Policy Support,1350,-162,51,25,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+10,139,Distrust of Centralized Institution,1731,-166,116,39,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Times New Roman|14||0-0-0,0,0,0,0,0,0
+1,140,138,126,1,0,43,0,0,192,0,-1--1--1,,1|(1466,-137)|
+1,141,139,126,1,0,43,0,0,192,0,-1--1--1,,1|(1578,-140)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 2
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+///---\\\
+:L<%^E!@
+5:Policy Support
+19:81,0
+24:0
+25:0
+26:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
